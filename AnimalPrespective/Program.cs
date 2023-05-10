@@ -9,10 +9,9 @@ namespace AnimalPerspective
             Animal[] animals = new Animal[10];
             Random rd = new Random();
 
-            // Populate the animals array with random animals
             for (int i = 0; i < animals.Length; i++)
             {
-                int animalType = rd.Next(4); // Generate a random number from 0 to 3
+                int animalType = rd.Next(4); 
                 switch (animalType)
                 {
                     case 0:
@@ -30,7 +29,6 @@ namespace AnimalPerspective
                 }
             }
 
-            // Print out the information for each animal
             for (int i = 0; i < animals.Length; i++)
             {
                 Console.WriteLine("Animal: " + (i + 1) + " ---> " + animals[i].Sound());
